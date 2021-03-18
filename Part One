@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class SimpleCalc {
+
+	private static int num1;
+	private static int num2;
+	private static int answer;
+	
+	public static void getUserInput(){
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please enter your first Number");
+		num1 = input.nextInt();
+		
+		System.out.println("Please enter in your second Number");
+		num2 = input.nextInt();
+	}
+	
+	public void add(){
+		
+		this.setAnswer(SimpleCalc.num1 + SimpleCalc.num2);
+		System.out.println("This is the Addittion of the two numbers: " + answer);
+		
+	}
+	
+	public void subtract(){
+		
+		this.setAnswer(SimpleCalc.num1 - SimpleCalc.num2);
+		System.out.println("This is the Subtraction of the two numbers: " + answer);
+	}
+	
+	public void multiply(){
+		
+		this.setAnswer(SimpleCalc.num1 * SimpleCalc.num2);
+		System.out.println("This is the Multicaption of the two numbers: " + answer);
+	}
+	
+	public void divide (){
+		this.setAnswer(SimpleCalc.num1 / SimpleCalc.num2);
+		System.out.println("This is the Division of the two numbers: " + answer);
+	}
+
+	public void setAnswer(int answer) {
+		SimpleCalc.answer = answer;
+	}
+
+	public int getAnswer() {
+		return answer;
+	}
+
+}
