@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+
+public class SimpleCalcAnswer {
+	
+	public static void main ( String []  args ){
+		
+		SimpleCalc Scanner = new SimpleCalc();
+		SimpleCalc.getUserInput();
+		
+		Scanner.add();
+		Scanner.divide();
+		Scanner.multiply();
+		Scanner.subtract();
+		
+}
+}
